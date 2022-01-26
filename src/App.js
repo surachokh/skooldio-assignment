@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Card, CardContent, createTheme, ThemeProvider } from "@mui/material";
+import { Box } from "@mui/system";
+import React from "react";
+import Header from "./components/Header";
 
-function App() {
+export default function App() {
+  const theme = createTheme({
+    typography: {
+      fontFamily: ['"Prompt"', "sans-serif"].join(","),
+    },
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <ThemeProvider theme={theme}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <Card sx={{ minWidth: 275 }}>
+            <CardContent>
+              <Header />
+            </CardContent>
+          </Card>
+        </Box>
+      </ThemeProvider>
     </div>
   );
 }
-
-export default App;
