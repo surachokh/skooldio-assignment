@@ -2,6 +2,7 @@ import { Card, CardContent, createTheme, ThemeProvider } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import Header from "./components/Header";
+import Content from "./components/Content"
 
 export default function App() {
   const theme = createTheme({
@@ -24,6 +25,8 @@ export default function App() {
           <Card sx={{ minWidth: 275 }}>
             <CardContent>
               <Header />
+              <hr />
+              <Content />
             </CardContent>
           </Card>
         </Box>
