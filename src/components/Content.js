@@ -109,8 +109,8 @@ export default class Contents extends Component {
               alignItems: "center",
             }}
           >
-            <Typography sx={{ fontSize: 20 }}>20,845</Typography>
-            <Typography sx={{ fontSize: 11 }}>คะแนนต่ำสุด 60</Typography>
+            <Typography sx={{ fontSize: 20 }}>{this.props.score !== null ? this.props.score.min.toFixed() : '0'}</Typography>
+            <Typography sx={{ fontSize: 11 }}>คะแนนต่ำสุด {this.props.score !== null ? this.props.score.year : '2562'}</Typography>
           </Box>
           <Box
             sx={{
@@ -119,8 +119,8 @@ export default class Contents extends Component {
               alignItems: "center",
             }}
           >
-            <Typography sx={{ fontSize: 20 }}>21,345</Typography>
-            <Typography sx={{ fontSize: 11 }}>คะแนนเฉลี่ย 60</Typography>
+            <Typography sx={{ fontSize: 20 }}>{this.props.score !== null ? this.props.score.avg.toFixed() : '0'}</Typography>
+            <Typography sx={{ fontSize: 11 }}>คะแนนเฉลี่ย {this.props.score !== null ? this.props.score.year : '2562'}</Typography>
           </Box>
           <Box
             sx={{
@@ -129,8 +129,8 @@ export default class Contents extends Component {
               alignItems: "center",
             }}
           >
-            <Typography sx={{ fontSize: 20 }}>23,415</Typography>
-            <Typography sx={{ fontSize: 11 }}>คะแนนสูงสุด 60</Typography>
+            <Typography sx={{ fontSize: 20 }}>{this.props.score !== null ? this.props.score.max.toFixed() : '0'}</Typography>
+            <Typography sx={{ fontSize: 11 }}>คะแนนสูงสุด {this.props.score !== null ? this.props.score.year : '2562'}</Typography>
           </Box>
         </Box>
         <hr />

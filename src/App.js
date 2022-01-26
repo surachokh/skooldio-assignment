@@ -50,7 +50,7 @@ export default function App() {
                 <CardContent>
                   <Header picture={major.logo} facultyName={major.faculty.name} majorName={major.name} universityName={major.faculty.university.name}/>
                   <hr />
-                  <Content />
+                  <Content score={major.score}/>
                   <hr />
                   <Footer likes={major.likes}/>
                 </CardContent>

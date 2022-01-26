@@ -2,7 +2,7 @@ import { Box } from "@mui/system";
 import React, { Component } from "react";
 import PersonIcon from "@mui/icons-material/Person";
 import IosShareIcon from "@mui/icons-material/IosShare";
-import { Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 
 export default class Footer extends Component {
   render() {
@@ -20,8 +20,10 @@ export default class Footer extends Component {
               </Typography>
             </Box>
           </Box>
-          <Box sx={{display: 'flex'}}> 
-            <IosShareIcon />
+          <Box sx={{display: 'flex'}}>
+              <IconButton>
+              <IosShareIcon />
+              </IconButton>
           </Box>
         </Box>
       </Box>
