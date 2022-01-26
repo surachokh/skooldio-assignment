@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import engiLogo from "../Pictures/engi@3x.png";
 import { Box } from "@mui/system";
 import { IconButton, Typography } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
 export default class Header extends Component {
+
   render() {
     return (
       <Box
@@ -15,20 +15,20 @@ export default class Header extends Component {
         }}
       >
         <img
-          src={engiLogo}
+          src={this.props.picture}
           alt="Engineer Logo"
-          style={{ paddingRight: "16px" }}
+          style={{ paddingRight: "16px", width: 120, height: 120 }}
         />
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <Typography sx={{ fontSize: 24 }} color="red" gutterBottom>
-            คณะวิศวกรรมศาสตร์
+            {this.props.facultyName}
           </Typography>
           <Typography variant="h5" component="div"></Typography>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            สาขาวิศวกรรมทั่วไป
+            {this.props.majorName}
           </Typography>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            จุฬาลงกรณ์มหาวิทยาลัย
+            {this.props.universityName}
           </Typography>
         </Box>
         <Box sx={{ paddingLeft: "16px" }}>

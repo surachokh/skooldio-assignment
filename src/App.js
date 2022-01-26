@@ -48,7 +48,7 @@ export default function App() {
             {data.major.map((major) => (
               <Card sx={{ minWidth: 275 }}>
                 <CardContent>
-                  <Header />
+                  <Header picture={major.logo} facultyName={major.faculty.name} majorName={major.name} universityName={major.faculty.university.name}/>
                   <hr />
                   <Content />
                   <hr />
