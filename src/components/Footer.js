@@ -12,7 +12,7 @@ export default class Footer extends Component {
           <Box sx={{ display: "flex", flexDirection: "row" }}>
             <PersonIcon style={{ color: "#9b9b9b", paddingRight: 20 }} />
             <Box sx={{ display: "flex", flexDirection: "row" }}>
-              <Typography sx={{ color: "#9b9b9b" }}> 10 </Typography>
+              <Typography sx={{ color: "#9b9b9b" }}> {this.props.likes} </Typography>
               <Typography
                 sx={{ fontStyle: "italic", paddingLeft: 1, color: "#9b9b9b" }}
               >

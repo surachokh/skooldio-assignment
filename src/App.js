@@ -52,7 +52,7 @@ export default function App() {
                   <hr />
                   <Content />
                   <hr />
-                  <Footer />
+                  <Footer likes={major.likes}/>
                 </CardContent>
               </Card>
             ))}
