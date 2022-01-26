@@ -21,31 +21,31 @@ export default class Contents extends Component {
             }}
           >
             <span className="dot-green">
-              <Typography sx={{ color: "white", paddingTop: "3px" }}>
+              <Typography sx={{ color: "white", paddingTop: "4px" }}>
                 {" "}
                 1{" "}
               </Typography>
             </span>
             <span className="dot-green">
-              <Typography sx={{ color: "white", paddingTop: "3px" }}>
+              <Typography sx={{ color: "white", paddingTop: "4px" }}>
                 {" "}
                 2{" "}
               </Typography>
             </span>
             <span className="dot">
-              <Typography sx={{ color: "white", paddingTop: "3px" }}>
+              <Typography sx={{ color: "white", paddingTop: "4px" }}>
                 {" "}
                 3{" "}
               </Typography>
             </span>
             <span className="dot-green">
-              <Typography sx={{ color: "white", paddingTop: "3px" }}>
+              <Typography sx={{ color: "white", paddingTop: "4px" }}>
                 {" "}
                 4{" "}
               </Typography>
             </span>
             <span className="dot">
-              <Typography sx={{ color: "white", paddingTop: "3px" }}>
+              <Typography sx={{ color: "white", paddingTop: "4px" }}>
                 {" "}
                 5{" "}
               </Typography>
@@ -67,7 +67,7 @@ export default class Contents extends Component {
             แก้ไขข้อมูล{" "}
             <img
               src={logo}
-              style={{ width: 19, height: 19, paddingLeft: 10 }}
+              style={{ width: 19, height: 19, paddingLeft: 8 }}
               alt="logo"
             />
           </Button>
@@ -80,7 +80,7 @@ export default class Contents extends Component {
             justifyContent: "space-between",
           }}
         >
-          <Box sx={{ display: "flex", alignItems: "center", paddingLeft: 5 }}>
+          <Box sx={{ display: "flex", alignItems: "center", paddingLeft: 8 }}>
             <img src={starLogo} alt="star logo" />
           </Box>
           <Box
@@ -135,7 +135,7 @@ export default class Contents extends Component {
         </Box>
         <hr />
         <Box sx={{ display: "flex", flexDirection: "row" }}>
-          <PlayArrowIcon style={{ color: "#48b6a3", paddingRight: 20 }} />
+          <PlayArrowIcon style={{ color: "#48b6a3", paddingRight: 16 }} />
           <Typography sx={{ fontSize: 16, color: "#48b6a3" }}>
             ดูสัดส่วนคะแนน
           </Typography>

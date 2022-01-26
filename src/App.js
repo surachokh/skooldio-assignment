@@ -27,6 +27,8 @@ export default function App() {
               <Header />
               <hr />
               <Content />
+              <hr />
+              
             </CardContent>
           </Card>
         </Box>
